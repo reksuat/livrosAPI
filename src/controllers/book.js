@@ -7,7 +7,7 @@ const index = () => db;
 const show = id => db.find(el => el.id==id)
 
 function create(body) {
-    const novo = modelo(body)
+    const novo = model(body)
     if (body) {
         db.push(novo)
         return 201;
@@ -15,7 +15,7 @@ function create(body) {
     return 400
 }
 function update(body, id) {
-    const novo = modelo(body, parseInt(id))
+    const novo = model(body, parseInt(id))
     const index = db.findIndex(el => el.id  == id)
 
     if (novo && index!= -1) {
