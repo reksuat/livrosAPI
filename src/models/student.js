@@ -10,8 +10,7 @@ function model(body, id = proxId++) {
         body.matricula != "" &&
         body.curso != undefined &&
         body.curso != "" &&
-        body.ano.leght== 4 &&
-        Number(body.ano)
+        body.ano.leght== 4
     ) {
         return{
             id,
