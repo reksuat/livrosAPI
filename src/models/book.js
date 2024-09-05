@@ -9,7 +9,7 @@ function model(body, id = proxId++) {
         body.autor != "" &&
         body.genero != undefined &&
         body.genero != "" &&
-        body.ano.leght== 4 
+        !isNaN(body.ano)
     ) {
         return{
             id,

@@ -10,7 +10,7 @@ function model(body, id = proxId++) {
         body.matricula != "" &&
         body.curso != undefined &&
         body.curso != "" &&
-        body.ano.leght== 4
+        !isNaN(body.ano) 
     ) {
         return{
             id,
